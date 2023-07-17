@@ -5,7 +5,9 @@ const Header = () => {
     <div className="container">
       <h1 className="main-title">Visual History Ukraine</h1>
       <button className="button">
-        <a>Main</a>
+        <a className="link" href="#">
+          Main
+        </a>
       </button>
     </div>
   );
