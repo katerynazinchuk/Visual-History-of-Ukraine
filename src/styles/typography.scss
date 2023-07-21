@@ -1,0 +1,97 @@
+$base-font-size: 13px;
+$base-line-height: 16px;
+
+@mixin large-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@mixin default-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@mixin small-text {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/fonts/SF-Pro.ttf") format("truetype"),
+    url("/public/fonts/SF-Pro-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/public/fonts/SF-Pro.ttf") format("truetype"),
+    url("/public/fonts/SF-Pro-Italic.ttf") format("truetype");
+}
+
+// Global styles for typography
+body {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $default-text-color;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007bff; // Link color
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Define different font sizes for responsive design
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+// Additional styles for special elements or components
+.highlight {
+  background-color: #ffffcc;
+}
+
+.caption {
+  font-size: 0.8rem;
+  color: #666;
+}
