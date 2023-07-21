@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 $base-font-size: 13px;
 $base-line-height: 16px;
 
@@ -19,14 +21,14 @@ $base-line-height: 16px;
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/public/fonts/SF-Pro.ttf") format("truetype"),
-    url("/public/fonts/SF-Pro-Italic.ttf") format("truetype");
+  src: url("../fonts/SF-Pro.ttf") format("truetype"),
+    url("../fonts/SF-Pro.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("/public/fonts/SF-Pro.ttf") format("truetype"),
-    url("/public/fonts/SF-Pro-Italic.ttf") format("truetype");
+  src: url("../fonts/SF-Pro.ttf") format("truetype"),
+    url("../fonts/SF-Pro.ttf") format("truetype");
 }
 
 // Global styles for typography
@@ -66,32 +68,5 @@ p {
 }
 
 a {
-  color: #007bff; // Link color
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-// Define different font sizes for responsive design
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: 1.6rem;
-  }
-}
-
-// Additional styles for special elements or components
-.highlight {
-  background-color: #ffffcc;
-}
-
-.caption {
-  font-size: 0.8rem;
-  color: #666;
 }
