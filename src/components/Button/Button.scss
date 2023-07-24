@@ -1,27 +1,28 @@
 @import "../../styles/colors";
 
 .home-button {
-  font-size: 27px;
+  font-size: 21px;
   background-color: $yellow;
   color: $light-gray-bg1;
-  padding: 15px 40px;
+  padding: 9px 25px;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition: all 0.3s ease 0s;
 }
 
 .home-button:hover {
-  background-color: $yellow-light2;
+  background-color: $yellow-dark;
   color: $default-text-color;
 }
+
 .home-button:visited,
 .home-button:link,
 .home-button:hover,
 .home-button:active {
-  color: inherit;
   text-decoration: none;
 }
 .link {
-  color: $default-text-color;
+  color: $light-gray-bg1;
+  transition: all 0.3s ease 0s;
 }
