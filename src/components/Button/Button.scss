@@ -1,6 +1,6 @@
 @import "../../styles/colors";
 
-.home-button {
+.button {
   font-size: 21px;
   background-color: $yellow;
   color: $light-gray-bg1;
@@ -11,15 +11,15 @@
   transition: all 0.3s ease 0s;
 }
 
-.home-button:hover {
+.button:hover {
   background-color: $yellow-dark;
   color: $default-text-color;
 }
 
-.home-button:visited,
-.home-button:link,
-.home-button:hover,
-.home-button:active {
+.button:visited,
+.button:link,
+.button:hover,
+.button:active {
   text-decoration: none;
 }
 .link {
