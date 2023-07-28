@@ -22,7 +22,6 @@ const Button = ({ type, size, icon, label }) => {
 Button.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
   type: PropTypes.oneOf(["default", "primary", "danger", "secondary"]),
-  children: PropTypes.node,
 };
 
 export default Button;
