@@ -1,0 +1,77 @@
+@import "../../styles/colors";
+
+.button {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button.default {
+  background-color: $light-gray-bg2-b;
+  color: $default-text-color;
+}
+
+.button.default:hover {
+  background-color: $light-gray-bg5-b;
+  color: $default-text-color;
+}
+
+button.prime {
+  background-color: $yellow-bright;
+  color: $white-bg;
+}
+.button.prime:hover {
+  background-color: $yellow-dark;
+  color: $yellow-light2;
+}
+
+button.danger {
+  background-color: $purple;
+  color: $white-bg;
+}
+.button.danger:hover {
+  background-color: $purple-dark;
+  color: $purple-light2;
+}
+
+button.secondary {
+  background-color: $white-bg;
+  color: $default-text-color;
+}
+.button.secondary:hover {
+  background-color: $light-gray-bg3-b;
+  color: $default-text-color;
+}
+
+button.small {
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+button.medium {
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+button.large {
+  padding: 9px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.button:visited,
+.button:link,
+.button:hover,
+.button:active {
+  text-decoration: none;
+}
+.link {
+  color: $light-gray-bg1;
+  transition: all 0.3s ease 0s;
+}
