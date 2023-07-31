@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Design System Figma
+
+Link:
+https://www.figma.com/file/QJnUkOXbgHy9wxVOn2bveM/Airtable-Apps-UI-Kit-(Community)-(Copy)?type=design&node-id=308-7&mode=design
+
+
 ## Available Scripts
 
 In the project directory, you can run:
