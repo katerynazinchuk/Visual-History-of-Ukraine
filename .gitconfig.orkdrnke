@@ -1,0 +1,10 @@
+
+[user]
+	name = Orest Lyubinets
+	email = orestlog@ukr.net
+
+[github]
+user = "orkdrnke"
+
+[core]
+	sshCommand = "ssh -i ~/.ssh/vhu"
