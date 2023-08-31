@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 const Map = ({ period }) => {
@@ -9,5 +8,15 @@ const Map = ({ period }) => {
       <p>{period.name}</p>
     </div>
   );
+};
+
+Map.propTypes = {
+  period: PropTypes.oneOf([
+    "ANCIENT",
+    "MEDIEVAL",
+    "RENAISSANCE",
+    "INDUSTRIAL",
+    "MODERN",
+  ]),
 };
 export default Map;
