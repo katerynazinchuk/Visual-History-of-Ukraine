@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Map from "./Map";
 import Button from "./Button";
-import { BUTTON_SIZES, BUTTON_TYPES } from "../Button/constants";
+import { BUTTON_SIZES, BUTTON_TYPES } from "./Button/constants";
 import { HISTORICAL_PERIODS } from "./Map/constants";
 
 const periodsArray = Object.keys(HISTORICAL_PERIODS);
