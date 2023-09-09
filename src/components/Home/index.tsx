@@ -4,7 +4,6 @@ import Map from "../Map";
 import Button from "../Button";
 import { BUTTON_SIZES, BUTTON_TYPES } from "../Button/constants";
 import { HISTORICAL_PERIODS } from "../Map/constants";
-import { type } from "os";
 
 export type TPeriods = keyof typeof HISTORICAL_PERIODS;
 export type TPeriod = (typeof HISTORICAL_PERIODS)[TPeriods];
@@ -51,4 +50,5 @@ const Home = () => {
     </div>
   );
 };
+
 export default Home;

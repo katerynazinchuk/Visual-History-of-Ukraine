@@ -1,23 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-const icons = {
-  pen: (
-    <FontAwesomeIcon
-      icon={icon({ name: "pen" })}
-      className="icon"
-    />
-  ),
-};
-
-const Icon = ({ name: iconName }) => {
-  return icons[iconName];
+const Icon = ({ name: iconName, className }: any) => {
+  return <FontAwesomeIcon icon={iconName} className={`icon ${className}`} />;
 };
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default Icon;

@@ -8,7 +8,7 @@ const Button = ({ type, size, icon, label, handleClick }: any) => {
 
   return (
     <button className={classNames} onClick={handleClick}>
-      {icon && <Icon name={icon} />}
+      {icon && <Icon name={icon} className="button-icon" />}
       {label && <span>{label}</span>}
     </button>
   );
