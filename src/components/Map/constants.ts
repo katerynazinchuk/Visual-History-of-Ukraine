@@ -1,22 +1,22 @@
 export const HISTORICAL_PERIODS = {
   ANCIENT: {
-    name: "ANCIENT",
+    name: "Ancient",
     url: "ancient.jpg",
   } as const,
   MEDIEVAL: {
-    name: "MEDIEVAL",
+    name: "Medieval",
     url: "medieval.jpg",
   } as const,
   RENAISSANCE: {
-    name: "RENAISSANCE",
+    name: "Renaissance",
     url: "renaissance.jpg",
   } as const,
   INDUSTRIAL: {
-    name: "INDUSTRIAL",
+    name: "Industrial",
     url: "industrial.jpg",
   } as const,
   MODERN: {
-    name: "MODERN",
+    name: "Modern",
     url: "modern.jpg",
   } as const,
 };

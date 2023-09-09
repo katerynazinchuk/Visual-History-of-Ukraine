@@ -74,6 +74,9 @@ button.large {
 .button:active {
   text-decoration: none;
 }
+.button:disabled {
+  opacity: 0.5;
+}
 .link {
   color: $light-gray-bg1;
   transition: all 0.3s ease 0s;

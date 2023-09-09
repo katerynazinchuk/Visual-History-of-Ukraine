@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Map from "../Map";
 import Button from "../Button";
@@ -12,9 +12,11 @@ const periodsArray = Object.keys(HISTORICAL_PERIODS) as TPeriods[];
 
 const Home = () => {
   const [period, setPeriod] = useState(periodsArray[0]);
+  const [backButtonDisabled, setBackButtonDisabled] = useState(false);
+  const [nextButtonDisabled, setNextButtonDisabled] = useState(false);
+  const currentKeyIndex = periodsArray.indexOf(period);
 
   const clickNext = () => {
-    const currentKeyIndex = periodsArray.indexOf(period);
     if (currentKeyIndex < periodsArray.length - 1) {
       const nextKeyIndex = currentKeyIndex + 1;
       setPeriod(periodsArray[nextKeyIndex]);
@@ -22,12 +24,26 @@ const Home = () => {
   };
 
   const clickPrev = () => {
-    const currentKeyIndex = periodsArray.indexOf(period);
     if (currentKeyIndex > 0) {
       const prevKeyIndex = currentKeyIndex - 1;
       setPeriod(periodsArray[prevKeyIndex]);
     }
   };
+
+  useEffect(() => {
+    if (currentKeyIndex === 0) {
+      setBackButtonDisabled(true);
+    } else if (currentKeyIndex === periodsArray.length - 1) {
+      setNextButtonDisabled(true);
+    } else {
+      if (backButtonDisabled) {
+        setBackButtonDisabled(false);
+      }
+      if (nextButtonDisabled) {
+        setNextButtonDisabled(false);
+      }
+    }
+  }, [currentKeyIndex]);
 
   return (
     <div>
@@ -39,12 +55,14 @@ const Home = () => {
           size={BUTTON_SIZES.MEDIUM}
           label="Back"
           handleClick={clickPrev}
+          isDisabled={backButtonDisabled}
         />
         <Button
           type={BUTTON_TYPES.DEFAULT}
           size={BUTTON_SIZES.MEDIUM}
           label="Next"
           handleClick={clickNext}
+          isDisabled={nextButtonDisabled}
         />
       </div>
     </div>
