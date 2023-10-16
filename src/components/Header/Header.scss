@@ -1,7 +1,20 @@
 .container {
+  max-width: 75%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 8%;
-  background-color: #ecebeb;
+  align-items: baseline;
+}
+.header--main {
+  color: #ffa500;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 10px 20px;
+  background-color: #07213b;
 }
