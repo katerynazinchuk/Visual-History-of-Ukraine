@@ -22,12 +22,12 @@ const Header = () => {
         type={BUTTON_TYPES.DANGER}
         size={BUTTON_SIZES.MEDIUM}
         label="Danger"
+        icon="pen"
       /> */}
         <Button
           type={BUTTON_TYPES.SECONDARY}
           size={BUTTON_SIZES.LARGE}
           label="About project"
-          icon="pen"
         />
       </div>
     </div>
