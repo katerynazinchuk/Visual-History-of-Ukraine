@@ -21,6 +21,7 @@ const Map = ({ period }: { period: TPeriod }) => {
   return (
     <div className="map-container">
       {image && <img src={image} alt={period.name} className="map" />}
+
       <h3 className="map-title">{period.name}</h3>
       <article className="map-short-description">
         <p>

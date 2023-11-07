@@ -1,20 +1,24 @@
-.container {
-  max-width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.header--main {
-  color: $energy-orange;
-}
-
+@import "../../styles/colors";
 .navbar {
   width: 100%;
   margin: auto;
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 20px 10px 20px;
+  padding: 20px 0 20px;
   background-color: $dark-shade-blue;
+}
+
+.container {
+  max-width: 85%;
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 auto;
+}
+.header--main {
+  padding: 0;
+  color: $energy-orange;
 }
