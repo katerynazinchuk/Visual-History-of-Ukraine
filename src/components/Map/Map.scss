@@ -21,3 +21,12 @@
   width: 90%;
   max-width: 760px;
 }
+
+@media screen and (max-width: 600px) {
+  .map {
+    width: 100%;
+  }
+  .map-short-description {
+    width: 100%;
+  }
+}

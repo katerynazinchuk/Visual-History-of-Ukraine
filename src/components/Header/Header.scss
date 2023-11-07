@@ -9,7 +9,7 @@
   background-color: $dark-shade-blue;
 }
 
-.container {
+.navbar__container {
   max-width: 85%;
   width: 1440px;
   margin: auto;
@@ -18,7 +18,12 @@
   align-items: center;
   flex: 1 0 auto;
 }
-.header--main {
+.navbar__logo {
   padding: 0;
   color: $energy-orange;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 21px;
+  }
 }
