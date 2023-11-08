@@ -36,7 +36,7 @@ body {
   font-family: "SF Pro Text", sans-serif;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $default-text-color;
+  // color: $default-text-color;
   font-style: normal;
 }
 
@@ -45,7 +45,6 @@ h1 {
   font-size: 27px !important;
   line-height: 34px;
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 h2 {
