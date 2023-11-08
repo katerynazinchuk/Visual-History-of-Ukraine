@@ -38,10 +38,8 @@ button.danger {
 }
 
 button.secondary {
-  // background-color: $white-bg;
-  // color: $default-text-color;
-  background-color: #ffa500;
-  color: #07213b;
+  background-color: $white-bg;
+  color: $default-text-color;
 
   &:hover {
     background-color: $light-gray-bg3-b;
