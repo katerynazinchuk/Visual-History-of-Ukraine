@@ -8,32 +8,32 @@ import { HISTORICAL_PERIODS } from "../Map/constants";
 export type TPeriods = keyof typeof HISTORICAL_PERIODS;
 export type TPeriod = (typeof HISTORICAL_PERIODS)[TPeriods];
 
-const periodsArray = Object.keys(HISTORICAL_PERIODS) as TPeriods[];
+export const PERIODS_ARRAY = Object.keys(HISTORICAL_PERIODS) as TPeriods[];
 
 const Home = () => {
-  const [period, setPeriod] = useState(periodsArray[0]);
+  const [period, setPeriod] = useState(PERIODS_ARRAY[0]);
   const [backButtonDisabled, setBackButtonDisabled] = useState(false);
   const [nextButtonDisabled, setNextButtonDisabled] = useState(false);
-  const currentKeyIndex = periodsArray.indexOf(period);
+  const currentKeyIndex = PERIODS_ARRAY.indexOf(period);
 
   const clickNext = () => {
-    if (currentKeyIndex < periodsArray.length - 1) {
+    if (currentKeyIndex < PERIODS_ARRAY.length - 1) {
       const nextKeyIndex = currentKeyIndex + 1;
-      setPeriod(periodsArray[nextKeyIndex]);
+      setPeriod(PERIODS_ARRAY[nextKeyIndex]);
     }
   };
 
   const clickPrev = () => {
     if (currentKeyIndex > 0) {
       const prevKeyIndex = currentKeyIndex - 1;
-      setPeriod(periodsArray[prevKeyIndex]);
+      setPeriod(PERIODS_ARRAY[prevKeyIndex]);
     }
   };
 
   useEffect(() => {
     if (currentKeyIndex === 0) {
       setBackButtonDisabled(true);
-    } else if (currentKeyIndex === periodsArray.length - 1) {
+    } else if (currentKeyIndex === PERIODS_ARRAY.length - 1) {
       setNextButtonDisabled(true);
     } else {
       if (backButtonDisabled) {

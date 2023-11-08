@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { TPeriod } from "../Home";
 import "./Map.scss";
+import Slider from "../Slider";
 
 const Map = ({ period }: { period: TPeriod }) => {
   const [image, setImage] = useState(null);
@@ -21,6 +22,7 @@ const Map = ({ period }: { period: TPeriod }) => {
   return (
     <div className="map-container">
       {image && <img src={image} alt={period.name} className="map" />}
+      <Slider />
       <h3 className="map-title">{period.name}</h3>
       <article className="map-short-description">
         <p>
