@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
+  @media screen and (max-width: 1440px) {
+  margin: 0;
 }
 
 .map {
@@ -11,6 +13,9 @@
   max-width: 1440px;
   width: 90%;
   background-size: contain;
+  @media screen and (max-width: 1440px) {
+    width: 100%;
+  }
 }
 
 .map-title {
@@ -22,12 +27,4 @@
   max-width: 760px;
 }
 
-@media screen and (max-width: 1440px) {
-  .map {
-    width: 100%;
-  }
 
-  .map-container {
-    margin: 0;
-  }
-}

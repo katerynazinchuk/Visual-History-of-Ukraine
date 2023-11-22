@@ -79,25 +79,19 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
+
+  @media screen and (max-width: 800px) {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
 }
 
 .link {
   color: $light-gray-bg1;
   transition: all 0.3s ease 0s;
-}
-@media screen and (max-width: 800px) {
-  .button.large {
-    padding: 7px 12px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 18px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .button.large {
-    padding: 5px 10px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 18px;
-  }
 }
