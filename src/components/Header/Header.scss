@@ -7,6 +7,14 @@
   z-index: 1;
   padding: 20px 0 20px;
   background-color: $dark-shade-blue;
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem 0 1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 0.8rem 0 0.8rem;
+  }
 }
 
 .navbar__container {
@@ -17,30 +25,21 @@
   justify-content: space-between;
   align-items: center;
   flex: 1 0 auto;
+
+  @media screen and (max-width: 800px) {
+    max-width: 90%;
+  }
 }
 .navbar__logo {
   padding: 0;
   color: $energy-orange;
-}
 
-@media screen and (max-width: 800px) {
-  .navbar__container {
-    max-width: 90%;
-  }
-  h1 {
+  @media screen and (max-width: 800px) {
     font-size: 21px;
     line-height: 26px;
   }
-  .navbar {
-    padding: 1rem 0 1rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  h1 {
+
+  @media screen and (max-width: 400px) {
     font-size: 18px;
-    line-height: 26px;
-  }
-  .navbar {
-    padding: 0.8rem 0 0.8rem;
   }
 }
