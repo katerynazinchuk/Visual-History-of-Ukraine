@@ -6,9 +6,8 @@ import { BUTTON_SIZES, BUTTON_TYPES } from "../Button/constants";
 const Header = () => {
   return (
     <div className="navbar">
-      <div className="container">
-        <h1 className="header--main">Visual History Ukraine</h1>
-
+      <div className="navbar__container">
+        <h1 className="navbar__logo">Visual History Ukraine</h1>
         <Button
           type={BUTTON_TYPES.SECONDARY}
           size={BUTTON_SIZES.LARGE}
