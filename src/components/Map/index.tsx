@@ -25,8 +25,8 @@ const Map = ({ period }: { period: TPeriod }) => {
 
       <h3 className="map-title">{period.name}</h3>
       <article className="map-short-description">
-        {period.paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+        {period.paragraphs.map((paragraph) => (
+          <p key={paragraph.id}>{paragraph.text}</p>
         ))}
       </article>
     </div>
