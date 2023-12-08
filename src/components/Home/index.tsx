@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Map from "../Map";
 import Button from "../Button";
+import "./Home.scss";
 import { BUTTON_SIZES, BUTTON_TYPES } from "../Button/constants";
 import { HISTORICAL_PERIODS } from "../Map/constants";
 
@@ -49,7 +50,7 @@ const Home = () => {
     <div>
       <Header />
       <Map period={HISTORICAL_PERIODS[period]} />
-      <div>
+      <div className="map-switcher-container">
         <Button
           type={BUTTON_TYPES.DEFAULT}
           size={BUTTON_SIZES.MEDIUM}

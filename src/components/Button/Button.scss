@@ -5,9 +5,24 @@
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-weight: 600;
+  line-height: 18px;
+
+  &:visited,
+  &:link,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+  .button-icon {
+    padding-right: 10px;
+  }
 }
 
-button.default {
+.button.default {
   background-color: $light-gray-bg2-b;
   color: $default-text-color;
 
@@ -16,7 +31,7 @@ button.default {
   }
 }
 
-button.primary {
+.button.primary {
   background-color: $yellow-bright;
   color: $white-bg;
 
@@ -26,7 +41,7 @@ button.primary {
   }
 }
 
-button.danger {
+.button.danger {
   background-color: $purple;
   color: $white-bg;
 
@@ -36,9 +51,9 @@ button.danger {
   }
 }
 
-button.secondary {
-  background-color: #ffa500;
-  color: #07213b;
+.button.secondary {
+  background-color: $energy-orange;
+  color: $dark-shade-blue;
 
   &:hover {
     background-color: $light-gray-bg3-b;
@@ -46,43 +61,31 @@ button.secondary {
   }
 }
 
-button.small {
+.button.small {
   padding: 5px 10px;
   font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
 }
 
-button.medium {
+.button.medium {
   padding: 7px 12px;
   font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
 }
 
-button.large {
+.button.large {
   padding: 9px 14px;
   font-size: 15px;
-  font-weight: 600;
-  line-height: 18px;
+
+  @media screen and (max-width: 800px) {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 5px 10px;
+  }
 }
 
-.button:visited,
-.button:link,
-.button:hover,
-.button:active {
-  text-decoration: none;
-}
-.button:disabled {
-  opacity: 0.5;
-}
 .link {
   color: $light-gray-bg1;
   transition: all 0.3s ease 0s;
-}
-
-.button {
-  .button-icon {
-    padding-right: 10px;
-  }
 }
