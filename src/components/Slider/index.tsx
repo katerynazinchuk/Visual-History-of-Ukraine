@@ -41,7 +41,7 @@ const Slider = () => {
         }}
       >
         <span className="slider-thumb-text">
-          {PERIODS_ARRAY[state.valueNow]}
+          [{PERIODS_ARRAY[state.valueNow]}]
         </span>
       </div>
     );
