@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { TPeriod } from "../Home";
 import "./Map.scss";
 import Slider from "../Slider";
+import { usePeriod } from "../../context/PeriodContext";
 
-const Map = ({ period }: { period: TPeriod }) => {
+const Map = () => {
+  const { period } = usePeriod();
   const [image, setImage] = useState(null);
 
   // Dynamically import images
@@ -34,13 +34,4 @@ const Map = ({ period }: { period: TPeriod }) => {
   );
 };
 
-Map.propTypes = {
-  period: PropTypes.oneOf([
-    "ANCIENT",
-    "MEDIEVAL",
-    "RENAISSANCE",
-    "INDUSTRIAL",
-    "MODERN",
-  ]),
-};
 export default Map;

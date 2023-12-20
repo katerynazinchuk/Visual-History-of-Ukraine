@@ -1,6 +1,9 @@
+import { TPeriods } from "./types";
+
 export const HISTORICAL_PERIODS = {
   ANCIENT: {
     name: "Ancient",
+    years: "5000 BCE - 500 CE",
     paragraphs: [
       {
         id: 1,
@@ -16,6 +19,7 @@ export const HISTORICAL_PERIODS = {
   } as const,
   MEDIEVAL: {
     name: "Medieval",
+    years: "500 - 1500 CE",
     paragraphs: [
       {
         id: 1,
@@ -31,6 +35,7 @@ export const HISTORICAL_PERIODS = {
   } as const,
   RENAISSANCE: {
     name: "Renaissance",
+    years: "1500 - 1800 CE",
     paragraphs: [
       {
         id: 1,
@@ -46,6 +51,7 @@ export const HISTORICAL_PERIODS = {
   } as const,
   INDUSTRIAL: {
     name: "Industrial",
+    years: "1800 - 1900 CE",
     paragraphs: [
       {
         id: 1,
@@ -61,6 +67,7 @@ export const HISTORICAL_PERIODS = {
   } as const,
   MODERN: {
     name: "Modern",
+    years: "1900 - Present",
     paragraphs: [
       {
         id: 1,
@@ -75,3 +82,5 @@ export const HISTORICAL_PERIODS = {
     index: 4,
   } as const,
 };
+
+export const PERIODS_ARRAY = Object.keys(HISTORICAL_PERIODS) as TPeriods[];
