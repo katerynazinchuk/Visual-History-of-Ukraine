@@ -11,7 +11,7 @@ type TPeriodContext = {
 // Here I provide the fallback value for the context
 const PeriodContext = createContext<TPeriodContext>({
   period: HISTORICAL_PERIODS.ANCIENT,
-  positionValue: 0,
+  positionValue: HISTORICAL_PERIODS.ANCIENT.index,
   handleChange: () => {},
 });
 

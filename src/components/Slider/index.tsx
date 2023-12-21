@@ -13,7 +13,7 @@ const Slider = () => {
     : 0;
 
   const [sliderWidth, setSliderWidth] = useState(0);
-  const { handleChange, period, positionValue } = usePeriod();
+  const { handleChange, positionValue } = usePeriod();
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
