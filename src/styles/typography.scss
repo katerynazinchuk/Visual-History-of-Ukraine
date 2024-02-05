@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 $base-font-size: 13px;
-$base-line-height: 16px;
+$base-line-height: 20px;
 
 @mixin large-text {
   font-size: 15px;
@@ -34,9 +34,8 @@ $base-line-height: 16px;
 // Global styles for typography
 body {
   font-family: "SF Pro Text", sans-serif;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  font-style: normal;
+  color: $default-text-color;
+  @include default-text;
 }
 
 h1 {

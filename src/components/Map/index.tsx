@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { TPeriod } from "../Home";
 import "./Map.scss";
-import { faParagraph } from "@fortawesome/free-solid-svg-icons";
+import Slider from "../Slider";
+import { usePeriod } from "../../context/PeriodContext";
 
-const Map = ({ period }: { period: TPeriod }) => {
+const Map = () => {
+  const { period } = usePeriod();
   const [image, setImage] = useState(null);
 
   // Dynamically import images
@@ -22,6 +22,7 @@ const Map = ({ period }: { period: TPeriod }) => {
   return (
     <div className="map-container">
       {image && <img src={image} alt={period.name} className="map" />}
+      <Slider />
 
       <h3 className="map-title">{period.name}</h3>
       <article className="map-short-description">
@@ -33,13 +34,4 @@ const Map = ({ period }: { period: TPeriod }) => {
   );
 };
 
-Map.propTypes = {
-  period: PropTypes.oneOf([
-    "ANCIENT",
-    "MEDIEVAL",
-    "RENAISSANCE",
-    "INDUSTRIAL",
-    "MODERN",
-  ]),
-};
 export default Map;
